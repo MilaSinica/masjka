@@ -1,5 +1,5 @@
 body {
-	background-image: url("../backgroundx.jpg");
+	background-image: url("../img/backgroundx.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -296,7 +296,7 @@ nav span {
 	margin-top: 50px;
 	margin-left: 20px;
 	margin-right: 20px;
-	background: url("..//ornamx.jpg");
+	background: url("../img/ornamx.jpg");
 	-webkit-transition: 1s ease-in-out;
     	-moz-transition: 1s ease-in-out;
     		-o-transition: 1s ease-in-out;
@@ -307,7 +307,7 @@ nav span {
 	text-transform: capitalize;
 }
 .bckg {
-	background: url("..//canvasx.jpg");
+	background: url("../img/canvasx.jpg");
 }
 .prints {
 	display: inline-block;
