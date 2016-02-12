@@ -8,7 +8,7 @@ body {
 /*Header*/
 .center {
 	width: 1300px;
-	margin: auto;
+	margin: 0 auto;
 	position: relative;				
 }
 .top-div {
@@ -108,7 +108,7 @@ body {
 	font-family: "Lobster", cursive;
 	font-size: 30px;
 	color: rgba(0,0,0,.5);
-	padding: 0 0 0 0;
+	padding: 0;
 }
 .comment-div {
 	display: none;

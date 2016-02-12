@@ -1,4 +1,4 @@
-		    	var name;
+		    	/*var name;
     			name = prompt("Welcome, enter your name here:"); 
     			alert(name);
 			    document.write("<h1>" +"Hi," + " " + name + "!" +"</h1>" + "<br>");
@@ -18,6 +18,10 @@
 			   var name=prompt("Welcome, enter your name here:");
 			   return name;
 			   }
-			   var firstName=welcomeMsg("Hi");
+			   var firstName=welcomeMsg("Hi");*/
+
+	function message(msg) {
+  		document.getElementById('output').innerHTML = msg;
+	}
 		
 		

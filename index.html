@@ -17,10 +17,10 @@
 	<link rel="stylesheet" href="assets/css/main.css">	
 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Lobster' rel='stylesheet' type='text/css'>
 
-	<noscript>Your browser doesn`t support or has disabled JavaScript</noscript>
+	<!--<noscript>Your browser doesn`t support or has disabled JavaScript</noscript>-->
 </head>
 
-<body>
+<body onload="message('Profile')" onresize="message('Don`t resize whenever you want!')">
 
 	<header>
 		<div class="center top-div">
@@ -55,7 +55,7 @@
 			</div>
 
 			<div class="profile wide bckg">
-				<h3 class="heading trans">Profile</h3>
+				<h3 class="heading trans" onclick="message('Don`t clik wherever you want')" id = "output">Profile</h3>
 				<table>
 					<tr><th>Name:</th><th>Masjka Sergeevna<th rowspan="9"><img src="assets/img/prints.png" width=450px class="trans2" alt="prints"/></th></tr>
 					<tr><th>Nickname:</th><th>Maloj</th></tr>
