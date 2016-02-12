@@ -211,7 +211,7 @@ nav {
 	font-family: 'Josefin Sans', sans-serif;
 	z-index: 10;
 }
-nav a img{
+nav a img {
 	width: 80px;
 	-webkit-border-radius: 10px;
 		border-radius: 10px;
@@ -233,7 +233,7 @@ nav a {
 nav a:hover img {
 	border: 2px solid #06425C;
 }
-nav a:hover{
+nav a:hover {
 	opacity: 1;
 	color: #06425C;
 	font-weight: bold;
@@ -252,6 +252,10 @@ nav span {
 }
 
 /*Posts - Common for All posts*/
+.post-center {
+	width: 1300;
+	margin: 0 auto;
+}
 .post {
 	position: relative;
 	display: inline-block;
@@ -286,16 +290,17 @@ nav span {
 .h3-2 {
 	padding-top: 20px;
 }
-.h2 {
-	display: inline-block;
-	width: 1300px;
+h2 {
+	display: block;
+	width: 1240px;
 	text-align: center;
 	font-size: 32px;
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 50px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 30px;
 	background: url("../img/ornamx.jpg");
 	-webkit-transition: 1s ease-in-out;
     	-moz-transition: 1s ease-in-out;
