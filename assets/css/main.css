@@ -108,7 +108,7 @@ body {
 	font-family: "Lobster", cursive;
 	font-size: 30px;
 	color: rgba(0,0,0,.5);
-	padding: 0,0,0,0;
+	padding: 0 0 0 0;
 }
 .comment-div {
 	display: none;
@@ -253,7 +253,7 @@ nav span {
 
 /*Posts - Common for All posts*/
 .post-center {
-	width: 1300;
+	width: 1300px;
 	margin: 0 auto;
 }
 .post {
@@ -292,22 +292,23 @@ nav span {
 }
 h2 {
 	display: block;
-	width: 1240px;
+	width: 1250px;
 	text-align: center;
-	font-size: 32px;
+	font-size: 45px;
 	color: black;
+	font-weight: bold;
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 50px;
 	margin-left: 0px;
 	margin-right: 0px;
-	padding: 30px;
+	padding: 40px;
 	background: url("../img/ornamx.jpg");
 	-webkit-transition: 1s ease-in-out;
     	-moz-transition: 1s ease-in-out;
     		-o-transition: 1s ease-in-out;
     			transition: 1s ease-in-out;
 }
-.h2:hover {
+h2:hover {
 	opacity: .4;
 	text-transform: capitalize;
 }
