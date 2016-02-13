@@ -21,7 +21,32 @@
 			   var firstName=welcomeMsg("Hi");*/
 
 	function message(msg) {
-  		document.getElementById('output').innerHTML = msg;
+  		document.getElementById('profile').innerHTML = msg;
 	}
 		
-		
+	function displayDate() {
+  		document.getElementById('time-button').innerHTML = Date();
+	}	
+
+	function setDate(){
+  		document.getElementById('date').innerHTML = Date();
+	}
+
+	function message2(msg) {
+  		document.getElementById('scroll').innerHTML = msg;
+	}
+
+	function closeMe(){
+   		x=document.getElementById("cens");
+   		x.style.display="none";
+	}
+
+	function openMe(){
+   		x=document.getElementById("cens");
+		x.style.display="block";
+	}
+
+	/*function openMe(){
+   		x=document.getElementById("cens2");
+		x.style.display="block";
+	}*/

@@ -20,11 +20,12 @@
 	<!--<noscript>Your browser doesn`t support or has disabled JavaScript</noscript>-->
 </head>
 
-<body onload="message('Profile')" onresize="message('Don`t resize whenever you want!')">
+<body onmouseover="message('Click me')" onresize="message('Don`t resize whenever you want!')" onmouseout="message('Profile')" onscroll="message2('Relax, scroll slower!')" onload="setDate()">
 
 	<header>
 		<div class="center top-div">
 			<img src="assets/img/1xx.jpg" alt="Masjka Pjos" class="header-image"/>
+			<div id="date"></div>
 			<h1 class="header-text">Welcome to <br/>Masjka`s web page</h1>
 			<div class="center speech-div">
 				<img src="assets/img/2xx.jpg" alt="Masjka Main" class="main-image"/>
@@ -55,7 +56,7 @@
 			</div>
 
 			<div class="profile wide bckg">
-				<h3 class="heading trans" onclick="message('Don`t clik wherever you want')" id = "output">Profile</h3>
+				<h3 class="heading trans" onclick="message('Don`t click wherever you want')" id = "profile">Profile</h3>
 				<table>
 					<tr><th>Name:</th><th>Masjka Sergeevna<th rowspan="9"><img src="assets/img/prints.png" width=450px class="trans2" alt="prints"/></th></tr>
 					<tr><th>Nickname:</th><th>Maloj</th></tr>
@@ -84,12 +85,15 @@
       	<a href="#christmas"><span>Christmas Dog</span><img src="assets/img/10xxx.jpg" alt="Christmas icon"/></a>
       	<a href="#family"><span>Family Dog</span><img src="assets/img/14xxx.jpg" alt="Family icon"/></a>
       	<a href="#bad"><span>Braking Bad Dog</span><img src="assets/img/21xxx.jpg" alt="Bad icon"/></a>
+      	<a href="#dict"><span></span><img src="assets/img/censored.png" alt="Censored icon"/></a>
       	<a href="#model"><span>Model Dog</span><img src="assets/img/23xx.jpg" alt="Model icon"/></a>
    	</nav>
 
    	<div class="separator">
 		<img alt="separator" src="assets/img/separator.png"/>
 	</div>
+
+   	<p id="scroll"> </p>
 
 		<div class="center" id="winter"><h2 id="test">Winter Dog</h2></div>
 
@@ -207,10 +211,12 @@
 			</div>
 		</div>
 
-	<div class="center"><h2>Censored (Hover Over If You Are 18+)</h2></div>
+	<div class="center" id="dict"><h2>Censored</h2></div>
 
 		<div class="dictator">
-			<img alt="Dictator dog" src="assets/img/dictatorx.png"/>
+			<button type="button" onclick="openMe()">Open(18+)</button>
+			<div id="cens"><img alt="Dictator dog" src="assets/img/dictatorx.png"/><br/>
+			<button class="hide-btn" type="button" onclick="closeMe()">Close(U)</button></div>
 		</div>
 
 	<div class="center" id="model"><h2>Model Dog</h2></div>
@@ -252,6 +258,9 @@
 
 	<footer>
 		<hr/>
+		<p id="time-button">Just to remind you</p>
+		<button type="button" onclick="displayDate()">When I am?</button>
+
 	</footer>
 
 </body>
