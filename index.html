@@ -20,7 +20,15 @@
 	<!--<noscript>Your browser doesn`t support or has disabled JavaScript</noscript>-->
 </head>
 
-<body onmouseover="message('Click me')" onresize="message('Don`t resize whenever you want!')" onmouseout="message('Profile')" onscroll="message2('Relax, scroll slower!')" onload="setDate()">
+<body onmouseover="message('Wanna click me?')" onresize="message('Don`t resize whenever you want!')" onmouseout="message('Profile')" onscroll="message2('Relax, scroll slower!')" onload="setDate()"> 
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+ 		 var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
 	<header>
 		<div class="center top-div">
@@ -37,13 +45,13 @@
 		</div>
 
 		<div class="center">
-			<div class="about-left">
+			<div class="about about-left">
 				Hi Everyone! This is The Dog...
 			</div>
-			<div class="about-right">
+			<div class="about about-right">
 				And this is The Blog...
 			</div>
-			<div class="about-center">
+			<div class="about about-center">
 				One Special Blog about One Special Dog...
 			</div>
 		</div>
@@ -81,12 +89,24 @@
 
 	<nav>
 		<img alt="print" class="trans2" src="assets/img/prints4.png"/>
-      	<a href="#winter"><span>Winter Dog</span><img src="assets/img/6xxx.jpg" alt="Winter icon"/></a>
-      	<a href="#christmas"><span>Christmas Dog</span><img src="assets/img/10xxx.jpg" alt="Christmas icon"/></a>
-      	<a href="#family"><span>Family Dog</span><img src="assets/img/14xxx.jpg" alt="Family icon"/></a>
-      	<a href="#bad"><span>Braking Bad Dog</span><img src="assets/img/21xxx.jpg" alt="Bad icon"/></a>
-      	<a href="#dict"><span></span><img src="assets/img/censored.png" alt="Censored icon"/></a>
-      	<a href="#model"><span>Model Dog</span><img src="assets/img/23xx.jpg" alt="Model icon"/></a>
+      	<a href="#winter" onmouseover="navOpacity(this)" onmouseout="navBack(this)" class="nav-link">
+      		<span class="nav-text">Winter Dog</span>
+      		<img src="assets/img/6xxx.jpg" alt="Winter icon" class="nav-img"/></a>
+      	<a href="#christmas" onmouseover="navOpacity(this)" onmouseout="navBack(this)" class="nav-link">
+      		<span class="nav-text">Christmas Dog</span>
+      		<img src="assets/img/10xxx.jpg" alt="Christmas icon" class="nav-img"/></a>
+      	<a href="#family" onmouseover="navOpacity(this)" onmouseout="navBack(this)" class="nav-link">
+      		<span class="nav-text">Family Dog</span>
+      		<img src="assets/img/14xxx.jpg" alt="Family icon" class="nav-img"/></a>
+      	<a href="#bad" onmouseover="navOpacity(this)" onmouseout="navBack(this)" class="nav-link">
+      		<span class="nav-text">Braking Bad Dog</span>
+      		<img src="assets/img/21xxx.jpg" alt="Bad icon" class="nav-img"/></a>
+      	<a href="#dict" onmouseover="navOpacity(this)" onmouseout="navBack(this)" class="nav-link">
+      		<span class="nav-text"></span>
+      		<img src="assets/img/censored.png" alt="Censored icon" class="nav-img"/></a>
+      	<a href="#model" onmouseover="navOpacity(this)" onmouseout="navBack(this)" class="nav-link">
+      		<span class="nav-text">Model Dog</span>
+      		<img src="assets/img/23xx.jpg" alt="Model icon" class="nav-img"/></a>
    	</nav>
 
    	<div class="separator">
@@ -258,9 +278,26 @@
 
 	<footer>
 		<hr/>
+
+		<!--<a href="">About the Project</a>-->
 		<p id="time-button">Just to remind you</p>
 		<button type="button" onclick="displayDate()">When I am?</button>
+		<div class="angry-dog angry-dog-neutral" id="angry">
+			<img src="assets/img/bubble2.gif" alt="Speech Bubble" class="speech1"/>
+			<img ondblclick="onAngryDogClick('angry-dog-happy')" src="assets/img/angrydog3x.png" alt="Angry dog" class="angry2 dog"/>
+			<img onclick="onAngryDogClick('angry-dog-neutral')" src="assets/img/angrydogx.png" alt="Smily dog" class="angry3 dog"/>
+			<img onclick="onAngryDogClick('angry-dog-angry')" src="assets/img/angrydog1x.png" alt="Neutral dog" class="angry1 dog"/>
+			<span class="comment3 angry1">Click to pet me</span>
+			<span class="comment3 angry2">No! Double click!</span>
+			<span class="comment3 angry3">Nice! More!</span>
+		</div>
 
+		<hr/>
+
+		<aside>
+			<span>© 2016 Mila Sinica</span>
+			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		</aside>
 	</footer>
 
 </body>
