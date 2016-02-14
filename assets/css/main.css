@@ -599,3 +599,9 @@ aside {
 	color: rgb(179,179,179);
 	text-align: right;
 }
+.fb-like {
+	font-size: 20px;
+}
+.credits {
+	margin: 20px;
+}
