@@ -500,6 +500,14 @@ button:active {
 #cens {
 	display: none;
 }
+/*Post Cosplay*/
+.cosplay{
+	display: inline-block;
+	width: 290px;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: -50px;
+}
 
 /*Post Model*/
 .modl1 {
@@ -601,7 +609,9 @@ aside {
 }
 .fb-like {
 	font-size: 20px;
+	float: left;
 }
 .credits {
 	margin: 20px;
 }
+
