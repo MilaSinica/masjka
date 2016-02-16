@@ -190,6 +190,18 @@ body {
 }
 .profile-image {
 	width: 100%;
+	-webkit-transition: 1s ease-in;
+		-moz-transition: 1s ease-in;
+			-o-transition: 1s ease-in;
+				transition: 1s ease-in;
+}
+.profile-image:hover {
+	cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+	-webkit-transform: rotateY(150deg);
+    	-moz-transform: rotateY(150deg);
+    		-o-transform: rotateY(150deg);
+    			-ms-transform: rotateY(150deg);
+   					 transform: rotateY(150deg);
 }
 .narrow .profile-image {
 	box-shadow: 5px 5px 2px 2px #4A4A4A;
@@ -214,22 +226,36 @@ body {
 }
 
 /*Navigation*/
+.nav-heading{
+	cursor: pointer;
+	color: #C0C0C0;
+	font-size: 50px;
+	font-family: 'Poiret One', cursive;
+	text-shadow: 2px 2px rgba(179,179,179,.5);
+	-webkit-transition: 1s ease-in;
+		-moz-transition: 1s ease-in;
+			-o-transition: 1s ease-in;
+				transition: 1s ease-in;
+	margin-top: 0px;
+}
+.nav-heading:hover {
+	cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+	-webkit-transform: rotateX(150deg);
+    	-moz-transform: rotateX(150deg);
+    		-o-transform: rotateX(150deg);
+    			-ms-transform: rotateX(150deg);
+   					 transform: rotateX(150deg);
+}	
 .separator {
 	position: relative;
 	text-align: center;
-}
-.separator1 {
-	position: absolute;
-	text-align: center;
-	margin-top: 500px;
-	margin-left: 350px;
+	margin-top: 50px;
 }
 nav {
+	position: relative;
 	display: inline-block;
 	width: 1300px;
 	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 20px;
@@ -337,7 +363,7 @@ h2 {
 	color: black;
 	font-weight: bold;
 	font-family: 'Josefin Sans', sans-serif;
-	margin-top: 50px;
+	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	padding: 40px;
