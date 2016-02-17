@@ -26,7 +26,7 @@
 	<!--<noscript>Your browser doesn`t support or has disabled JavaScript</noscript>-->
 </head>
 
-<body onmouseover="message('Wanna click me?')" onresize="message('Don`t resize whenever you want!')" onmouseout="message('Profile')" onload="setDate()"> 
+<body onmouseover="message('Wanna click me?')" onresize="message('Don`t resize whenever you want!')" onmouseout="message('Profile')" onload="initPage()"> 
 	<div id="fb-root"></div>
 		<script>(function(d, s, id) {
  		 var js, fjs = d.getElementsByTagName(s)[0];
@@ -66,7 +66,7 @@
 	<section>
 		<div class="center parent">
 			<div class="narrow">
-				<img class="profile-image" src="assets/img/3xx.jpg" alt="Masjka Pjos"/>
+				<img class="profile-image profile-image-trans" src="assets/img/3xx.jpg" alt="Masjka Pjos"/>
 			</div>
 
 			<div class="profile wide bckg">
@@ -94,39 +94,37 @@
 				<img alt="separator" src="assets/img/separator.png"/>
 			</div>
 
-		<h4 class="nav-heading">SITE NAVIGATION</h4>
-		<img alt="print" class="trans2" src="assets/img/prints4.png"/>
-      	<a href="#winter" class="nav-link">
-      		<span class="nav-text">Winter Dog</span>
-      		<img src="assets/img/6xxx.jpg" alt="Winter icon" class="nav-img"/></a>
-      	<a href="#christmas" class="nav-link">
-      		<span class="nav-text">Christmas Dog</span>
-      		<img src="assets/img/10xxx.jpg" alt="Christmas icon" class="nav-img"/></a>
-      	<a href="#family" class="nav-link">
-      		<span class="nav-text">Family Dog</span>
-      		<img src="assets/img/14xxx.jpg" alt="Family icon" class="nav-img"/></a>
-      	<a href="#puppy" class="nav-link">
-      		<span class="nav-text">Puppy Dog</span>
-      		<img src="assets/img/34xx.jpg" alt="Puppy icon" class="nav-img"/></a>
-      	<a href="#bad" class="nav-link">
-      		<span class="nav-text">Braking Bad Dog</span>
-      		<img src="assets/img/21xxx.jpg" alt="Bad icon" class="nav-img"/></a>
-      	<a href="#dict" class="nav-link">
-      		<span class="nav-text"></span>
-      		<img src="assets/img/censored.png" alt="Censored icon" class="nav-img"/></a>
-      	<a href="#cosplay" class="nav-link">
-      		<span class="nav-text">Cosplay Dog</span>
-      		<img src="assets/img/30xx.jpg" alt="Cosplay icon" class="nav-img"/></a>
-      	<a href="#model" class="nav-link">
-      		<span class="nav-text">Model Dog</span>
-      		<img src="assets/img/23xx.jpg" alt="Model icon" class="nav-img"/></a>
-   	</nav>
-
-   	<div class="separator">
-		<img alt="separator" src="assets/img/separator.png"/>
-	</div>
-
-   	<p id="scroll"> </p>
+			<h4 class="nav-heading">BLOG NAVIGATION</h4>
+			<img alt="print" class="trans2" src="assets/img/prints4.png"/>
+      		<a href="#winter" class="nav-link">
+      			<span class="nav-text">Winter Dog</span>
+      			<img src="assets/img/6xxx.jpg" alt="Winter icon" class="nav-img"/></a>
+      		<a href="#christmas" class="nav-link">
+      			<span class="nav-text">Christmas Dog</span>
+      			<img src="assets/img/10xxx.jpg" alt="Christmas icon" class="nav-img"/></a>
+      		<a href="#family" class="nav-link">
+      			<span class="nav-text">Family Dog</span>
+      			<img src="assets/img/14xxx.jpg" alt="Family icon" class="nav-img"/></a>
+      		<a href="#puppy" class="nav-link">
+      			<span class="nav-text">Puppy Dog</span>
+      			<img src="assets/img/34xx.jpg" alt="Puppy icon" class="nav-img"/></a>
+      		<a href="#bad" class="nav-link">
+      			<span class="nav-text">Braking Bad Dog</span>
+      			<img src="assets/img/21xxx.jpg" alt="Bad icon" class="nav-img"/></a>
+      		<a href="#dict" class="nav-link">
+      			<span class="nav-text"></span>
+      			<img src="assets/img/censored.png" alt="Censored icon" class="nav-img"/></a>
+      		<a href="#cosplay" class="nav-link">
+      			<span class="nav-text">Cosplay Dog</span>
+      			<img src="assets/img/30xx.jpg" alt="Cosplay icon" class="nav-img"/></a>
+      		<a href="#model" class="nav-link">
+      			<span class="nav-text">Model Dog</span>
+      			<img src="assets/img/23xx.jpg" alt="Model icon" class="nav-img"/></a>
+   		
+   		   	<div class="separator">
+				<img alt="separator" src="assets/img/separator.png"/>
+			</div>
+		</nav>
 
 		<div class="center post">
 			<div class="center" id="winter"><h2 id="test">Winter Dog</h2></div>
@@ -368,11 +366,6 @@
 	</main>
 
 	<footer>
-		<hr/>
-
-		<!--<a href="">About the Project</a>-->
-		<p id="time-button">Just to remind you</p>
-		<button type="button" onclick="displayDate()">When I am?</button>
 		<div class="angry-dog angry-dog-neutral" id="angry">
 			<img src="assets/img/bubble2.gif" alt="Speech Bubble" class="speech1"/>
 			<img ondblclick="onAngryDogClick('angry-dog-happy')" src="assets/img/angrydog3x.png" alt="Angry dog" class="angry2 dog"/>
@@ -381,6 +374,20 @@
 			<span class="comment3 angry1">Click to pet me</span>
 			<span class="comment3 angry2">No! Double click!</span>
 			<span class="comment3 angry3">Nice! More!</span>
+		</div>
+
+		<div class="donation donation-first" id="donate">
+			<img src="assets/img/bubble2.gif" alt="Speech Bubble" class="speech2"/>
+			<span class="comment4">Donate and my owner will buy me a bone!</span>
+			<img src="assets/img/nja66x.png" alt="Sweet dog" class="donate donat1"/>
+			<img src="assets/img/nja67x.png" alt="Sweet dog2" class="donate donat2"/>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="33KSZUS5M576W">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
 		</div>
 
 		<hr/>

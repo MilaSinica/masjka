@@ -195,13 +195,13 @@ body {
 			-o-transition: 1s ease-in;
 				transition: 1s ease-in;
 }
-.profile-image:hover {
+.profile-image-trans:hover {
 	cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
-	-webkit-transform: rotateY(150deg);
-    	-moz-transform: rotateY(150deg);
-    		-o-transform: rotateY(150deg);
-    			-ms-transform: rotateY(150deg);
-   					 transform: rotateY(150deg);
+	-webkit-transform: rotateY(180deg);
+    	-moz-transform: rotateY(180deg);
+    		-o-transform: rotateY(180deg);
+    			-ms-transform: rotateY(180deg);
+   					 transform: rotateY(180deg);
 }
 .narrow .profile-image {
 	box-shadow: 5px 5px 2px 2px #4A4A4A;
@@ -306,7 +306,8 @@ nav a {
 	opacity: 0;	
 }
 .nav-link:hover .nav-img {
-	opacity: 1;	
+	opacity: 1;
+	border-color: #009fb6;
 }
 #scroll {
 	text-align: center;
@@ -612,15 +613,13 @@ button:active {
 }
 
 /*Footer*/
-/*.closed{
-		display: block;
-}*/
 .angry-dog {
+	display: inline-block;
 	width: 500px;
 	height: 600px;
 	position: relative;
 	margin-left: -20px;
-
+	margin-top: 80px;
 }
 .open{
 	display: none;
@@ -657,6 +656,59 @@ button:active {
 	width: 250px;
 	left: 200px;
 	z-index: 2;
+}
+.donation {
+	width: 400px;
+	height: 600px;
+	position: relative;
+	float: right;
+	display: inline-block;
+	margin-top: 80px;
+}
+.donate {
+	width: 350px;
+	position: absolute;
+	float: right;
+	margin-top: 170px;
+	display: none;
+	cursor: pointer;
+}
+.donate:hover {
+	cursor: url(http://cur.cursors-4u.net/holidays/hol-3/hol218.cur), auto;
+}
+.donat1 {
+	display: none;
+}
+.donat2 {
+	display: none;
+}
+.donation-first .donat1 {
+	display: block;
+}
+.donation-second .donat2 {
+	display: block;
+}
+.comment4 {
+	position: absolute;
+	right: 17px;
+	width: 250px;
+	top: 70px;
+	text-align: center;
+	font-family: "Lobster", cursive;
+	font-size: 25px;
+	color: rgba(179,179,179,.5);
+}
+.speech2 {
+	position: absolute;
+	width: 280px;
+	right: 0;
+	z-index: 2;
+}
+.paypal {
+	position: absolute;
+	top: 500px;
+	right: 150px;
+	cursor: pointer;
 }
 aside {
 	font-family: "Poiret One", cursive;

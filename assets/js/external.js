@@ -30,18 +30,21 @@
 
 	function setDate() {
   		document.getElementById('date').innerHTML = Date();
-  		var dog = document.getElementById('angry');
+  	}
+
+  	function setUpDonate() {
+  		var dog = document.getElementById('donate');
   		var neutralDog = true;
   		setInterval(function() {
   			if(neutralDog) {
-  				dog.className = "angry-dog angry-dog-happy";
+  				dog.className = "donation donation-first";
   				neutralDog = false;
   			} else {
-  				dog.className = "angry-dog angry-dog-neutral";
+  				dog.className = "donation donation-second";
   				neutralDog = true;
   			}
 
-  		}, 1000);
+  		}, 300);
 	}
 
 	function message2(msg) {
@@ -61,6 +64,12 @@
 	function onAngryDogClick(className) {
 		document.getElementById('angry').className = "angry-dog " + className;
 	}
+
+	function initPage() {
+		setDate();
+		setUpDonate();
+	}
+
 
 /*var navTextOpacity;
 var navImageOpacity;
