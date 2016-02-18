@@ -105,6 +105,9 @@
       		<a href="#family" class="nav-link">
       			<span class="nav-text">Family Dog</span>
       			<img src="assets/img/14xxx.jpg" alt="Family icon" class="nav-img"/></a>
+      		<a href="#masjzilla" class="nav-link">
+      			<span class="nav-text">Masjzilla</span>
+      			<img src="assets/img/godzilla.jpg" alt="Masjzilla icon" class="nav-img"/></a>
       		<a href="#puppy" class="nav-link">
       			<span class="nav-text">Puppy Dog</span>
       			<img src="assets/img/34xx.jpg" alt="Puppy icon" class="nav-img"/></a>
@@ -206,6 +209,18 @@
 		</div>
 
 		<div class="center post">
+			<div class="center" id="masjzilla"><h2>Masjzilla</h2></div>
+
+				<div class="big-dog bckg">
+					<img src="assets/img/godzillaxxx.jpg" alt = "Godzilla Dog" class="godzilla">
+					<h3 class="h3">How big Masjka thinks she is...</h3>
+				</div>
+				<button class="button-font" type="button" onclick="openMe()">How big she really is</button>
+				<div id="cens"><img alt="Small dog" src="assets/img/godzilla2x.jpg" class="godzilla"/><br/>
+				<button class="hide-btn" type="button" onclick="closeMe()">Close</button></div>
+			</div>
+
+		<div class="center post">
 			<div class="center" id="puppy"><h2>Puppy Dog</h2></div>
 
 			<div class="puppy1">
@@ -294,9 +309,9 @@
 		<div class="dictator">
 			<div class="center" id="dict"><h2>Censored</h2></div>
 
-			<button type="button" onclick="openMe()">Open(18+)</button>
+			<button class="button-font" type="button" onclick="openMe()">Open(18+)</button>
 			<div id="cens"><img alt="Dictator dog" src="assets/img/dictatorx.png"/><br/>
-			<button class="hide-btn" type="button" onclick="closeMe()">Close(U)</button></div>
+			<button class="hide-btn" type="button" onclick="closeMe()">Close</button></div>
 		</div>
 
 		<div class="center post">
@@ -339,10 +354,6 @@
 				<img class="profile-image" src="assets/img/25xx.jpg" alt="Masjka and barbeque"/>
 			</div>
 
-			<div class="prints">
-				<img class="profile-image trans2" src="assets/img/prints3.png" alt="Prints"/>
-			</div>
-
 			<div class="modl2 modl2-1">											<img class="profile-image" src="assets/img/24x.jpg" alt="Masjka and grass"/>
 			</div>
 
@@ -357,36 +368,50 @@
 			<div class="modl3 modl3-2">
 				<img class="profile-image" src="assets/img/28x.jpg" alt="Masjka and lake"/>
 			</div>
-
-			<div class="prints">
-				<img class="profile-image trans2" src="assets/img/prints3.png" alt="Prints"/>
-			</div>	
 		</div>
 
 	</main>
 
 	<footer>
-		<div class="angry-dog angry-dog-neutral" id="angry">
-			<img src="assets/img/bubble2.gif" alt="Speech Bubble" class="speech1"/>
-			<img ondblclick="onAngryDogClick('angry-dog-happy')" src="assets/img/angrydog3x.png" alt="Angry dog" class="angry2 dog"/>
-			<img onclick="onAngryDogClick('angry-dog-neutral')" src="assets/img/angrydogx.png" alt="Smily dog" class="angry3 dog"/>
-			<img onclick="onAngryDogClick('angry-dog-angry')" src="assets/img/angrydog1x.png" alt="Neutral dog" class="angry1 dog"/>
-			<span class="comment3 angry1">Click to pet me</span>
-			<span class="comment3 angry2">No! Double click!</span>
-			<span class="comment3 angry3">Nice! More!</span>
+		<div class="prints-footer trans2"><img src="assets/img/printsx.png" alt="prints">
 		</div>
 
-		<div class="donation donation-first" id="donate">
-			<img src="assets/img/bubble2.gif" alt="Speech Bubble" class="speech2"/>
-			<span class="comment4">Donate and my owner will buy me a bone!</span>
-			<img src="assets/img/nja66x.png" alt="Sweet dog" class="donate donat1"/>
-			<img src="assets/img/nja67x.png" alt="Sweet dog2" class="donate donat2"/>
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="33KSZUS5M576W">
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			</form>
+		<div class="footer-images">
+
+			<div class="angry-dog angry-dog-neutral" id="angry">
+				<img src="assets/img/bubble2.gif" alt="Speech Bubble" class="speech1"/>
+				<img ondblclick="onAngryDogClick('angry-dog-happy')" src="assets/img/angrydog3x.png" alt="Angry dog" class="angry2 dog"/>
+				<img onclick="onAngryDogClick('angry-dog-neutral')" src="assets/img/angrydogx.png" alt="Smily dog" class="angry3 dog"/>
+				<img onclick="onAngryDogClick('angry-dog-angry')" src="assets/img/angrydog1x.png" alt="Neutral dog" class="angry1 dog"/>
+
+				<span class="comment3 angry1">Click to pet me</span>
+				<span class="comment3 angry2">No! Double click!</span>
+				<span class="comment3 angry3">Nice! More!</span>
+			</div>
+
+			<div class="about-project">
+				<img src="assets/img/pawpaw1.png" class="bone paw1" alt="Big Bone">
+				<img src="assets/img/pawpaw2.png" class="bone paw2" alt="Big Bone">
+				<span class="about-proj">Read about<br/>the project</span>
+				<img src="assets/img/spitz.png" class="spitz" alt="Spitz" onmouseover="playSound('assets/img/bark.mp3')">
+				<span  id="dummy">Wanna hear me singing?
+				</span>
+			</div>
+
+			<div class="donation donation-first" id="donate">
+				<img src="assets/img/bubble2.gif" alt="Speech Bubble" class="speech2"/>
+				<span class="comment4">Donate and my owner will buy me a bone!</span>
+				<img src="assets/img/nja66x.png" alt="Sweet dog" class="donate donat1"/>
+				<img src="assets/img/nja67x.png" alt="Sweet dog2" class="donate donat2"/>
+
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="33KSZUS5M576W">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+				</form>
+			</div>
 
 		</div>
 
@@ -394,6 +419,7 @@
 
 		<aside>
 			<div class="fb-like" data-href="http://masjka.sinica.me" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
 			<address>
 				© 2016 Mila Sinica</a>.<br>Contact me:<br>ludmila.sinica@gmail.com<br>
 			</address>

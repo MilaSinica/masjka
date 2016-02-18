@@ -65,11 +65,21 @@
 		document.getElementById('angry').className = "angry-dog " + className;
 	}
 
+ 	/*function onHoverAudio() {
+ 		var audio = document.getElementById("#mySoundClip");
+		document.getElementsByClassName("spitz").mouseenter(function() {
+			audio.play();
+	});*/
+
 	function initPage() {
 		setDate();
 		setUpDonate();
 	}
 
+	function playSound(soundfile) {
+ 		 document.getElementById("dummy").innerHTML=
+    "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+	}
 
 /*var navTextOpacity;
 var navImageOpacity;
