@@ -61,6 +61,16 @@
 		x.style.display="block";
 	}
 
+	function closeMe2() {
+   		x=document.getElementById("cens2");
+   		x.style.display="none";
+	}
+
+	function openMe2() {
+   		x=document.getElementById("cens2");
+		x.style.display="block";
+	}
+
 	function onAngryDogClick(className) {
 		document.getElementById('angry').className = "angry-dog " + className;
 	}

@@ -574,6 +574,10 @@ button:active {
 #cens {
 	display: none;
 }
+#cens2 {
+	display: none;
+}
+
 /*Post Cosplay*/
 .cosplay{
 	display: inline-block;
