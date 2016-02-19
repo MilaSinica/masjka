@@ -212,8 +212,8 @@
 			<div class="center" id="masjzilla"><h2>Masjzilla</h2></div>
 
 				<div class="big-dog bckg">
-					<img src="assets/img/godzillaxxx.jpg" alt = "Godzilla Dog" class="godzilla">
-					<h3 class="h3">How big Masjka thinks she is...</h3>
+					<h3 class="h3-2 godz-text">How big Masjka thinks she is...</h3>
+					<img src="assets/img/godzillaxx.jpg" alt = "Godzilla Dog" class="godzilla">
 				</div>
 				<button class="button-font" type="button" onclick="openMe()">How big she really is</button>
 				<div id="cens"><img alt="Small dog" src="assets/img/godzilla2x.jpg" class="godzilla"/><br/>
@@ -222,7 +222,7 @@
 
 		<div class="center post">
 			<div class="center" id="puppy"><h2>Puppy Dog</h2></div>
-
+		
 			<div class="puppy1">
 				<div class="bckg">
 					<h3 class="h3-2">Angry Masjka. Rise of the legend</h3>
@@ -326,7 +326,7 @@
 			<div class="cosplay">
 				<div class="bckg">
 					<img class="profile-gif" src="assets/img/30x.jpg" alt="Masjka Superman"/>
-					<h3 class="h3">It's a Bird... It's a Plane... It's Supermasj!</h3>
+					<h3 class="h3">It's a Bird? It's a Plane? It's Supermasj!</h3>
 				</div>
 			</div>
 			<div class="cosplay">
@@ -392,10 +392,13 @@
 			<div class="about-project">
 				<img src="assets/img/pawpaw1.png" class="bone paw1" alt="Big Bone">
 				<img src="assets/img/pawpaw2.png" class="bone paw2" alt="Big Bone">
-				<span class="about-proj">Read about<br/>the project</span>
+				<span class="about-proj">	
+					<a href = "javascript:void(0)" class="link" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Read about<br/>the project</a><div id="fade" class="black_overlay"></div></span>
 				<img src="assets/img/spitz.png" class="spitz" alt="Spitz" onmouseover="playSound('assets/img/bark.mp3')">
 				<span  id="dummy">Wanna hear me singing?
 				</span>
+				<div id="light" class="white_content">Hi everyone! Thank you for visiting Masjka`s Blog! If you are reading this that means you made it till the end and it`s really awesome. The Blog is about my dog, which is also my muse, so it was very exciting to design all the stuff and devise different interactions. This is my pilot project in web design, I was making it while I was learning HTML, CSS and JavaScript basis, so I could use and test different properties I learnt at the moment. Maybe this web page is not perfect, has problems with accessibility and responsiveness, but I still love it and will not make any changes anymore. Thank you and good luck! <a href = "javascript:void(0)" class="link linkz" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
+   				
 			</div>
 
 			<div class="donation donation-first" id="donate">
