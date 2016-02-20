@@ -86,9 +86,19 @@
 		setUpDonate();
 	}
 
+	function hideBox() {
+	document.getElementById('light').style.display='none';
+	document.getElementById('fade').style.display='none';
+	}
+
 	function playSound(soundfile) {
  		 document.getElementById("dummy").innerHTML=
     "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+	}
+
+	function showBox() {
+		document.getElementById('light').style.display='block';
+		document.getElementById('fade').style.display='block';
 	}
 
 /*var navTextOpacity;
